@@ -76,6 +76,7 @@ int main(void)
     n_init(1, 0);
     gen_all_rooms(room, 0);
     print_rooms(room, 0);
+    n_create_color(1, COLOR_CYAN, COLOR_BLACK);
     while (1) {
         clear();
         main_loop(c, &x, &y, &room);

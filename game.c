@@ -140,6 +140,6 @@ void main_loop(int c, int *x, int *y, t_room **room)
     if (move == 4) *x -= 1;
     get_changed_room(room, x, y);
     print_room((*room)->map);
-    mvprintw(*y, *x, "x");
+    n_print_with_color_at("X", 1, *x, *y);
     refresh();
 }
